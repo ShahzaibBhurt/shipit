@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shipit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sideMenu.css">
+  <link rel="stylesheet" href="css/request-a-qoute.css">
+  <!-- MATERIAL DESIGN ICONIC FONT -->
+  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div>
+ 
+    <div class="container-fluid form-body">
+        <div class="lare page-padding">
+            <div class="wrapper">
+                <form action="" id="wizard" role="application" class="wizard clearfix">
+                    <h4 id="wizard-h-0" tabindex="-1" class="title current"></h4>
+                    <div id="wizard-p-0" role="tabpanel" aria-labelledby="wizard-h-0" class="body current" aria-hidden="false">
+                        <h3>REQUEST A QUOTE</h3>
+                        <ol style="list-style: square;" class="mb-5">
+                            <li>If you want us to contact you and learn more about your logistics requirements, please submit your complete contact information only. You can submit any Transportation or Logistics (3PL) RFQ/RFP/RFI through this form as well.</li>
+                            <li>For quote requests, please submit detailed shipment information for a fast response time. We respond to quote requests within 2 business days.</li>
+                            <li>Fields with an asterisk (*) are required fields.</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="full_name">* Full Name</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-account-o"></i>
+                                    <input type="text" class="form-control" id="full_name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email">* Email Address</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-email"></i>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="company_name">Company Name (if applies)</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-edit"></i>
+                                    <input type="text" class="form-control" id="company_name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="number">* Phone Number (with country code)</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-smartphone-android"></i>
+                                    <input type="number" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="origin_port">* ORIGIN Port or City/State/Zip Code/Country</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin-drop"></i>
+                                    <input type="text" class="form-control" id="origin_port">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="destination_port">* DESTINATION Port or City/State/Zip Code/Country</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin"></i>
+                                    <input type="text" class="form-control" id="destination_port">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>How should we contact you?</label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="b1" checked>
+                                    <label class="custom-control-label" for="b1">Email</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="b2">
+                                    <label class="custom-control-label" for="b2">Phone</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>U.S. Export or Import</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio" checked>Export
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Import
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Commodity Type</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio" checked>General Cargo
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Hazardous
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Perishable
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Shipment Dimensions/Weight # of Units (Pieces/Cartons/Pallets)</label>
+                                <label>Please select inches, feet, cms or meters</label><br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio" checked>Inches
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Feet
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Cms
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">Meters
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="description">Description/Details of Shipment/Commodity Name(s)</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-edit"></i>
+                                    <textarea class="form-control" id="description" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Dimensions of Each Unit in L x W x H</label><br>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label>Length</label>
+                                        <div class="form-holder">
+                                            <i class="zmdi zmdi-functions"></i>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <label>Width</label>
+                                        <div class="form-holder">
+                                            <i class="zmdi zmdi-functions"></i>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <label>Height</label>
+                                        <div class="form-holder">
+                                            <i class="zmdi zmdi-functions"></i>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Number of Units and Unit Type (e.g. 10 pallets)</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-collection-item-1"></i>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Weight of Each Unit</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-shopping-basket"></i>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Type of Service(s) (please select all that apply)</label>
+                                <div class="form-group">
+                                    <select multiple class="form-control" id="sel2" name="sellist2">
+                                        <option value="Ocean Freight">Ocean Freight</option>
+                                        <option value="Air Freight">Air Freight</option>
+                                        <option value="Trucking">Trucking</option>
+                                        <option value="Warehousing">Warehousing</option>
+                                        <option value="Customs Clearance">Customs Clearance</option>
+                                      </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Ocean Shipment Size (please select all that apply)</label>
+                                <div class="form-group">
+                                    <select multiple class="form-control" id="sel2" name="sellist2">
+                                        <option value="LCL (Less than Container Load)">LCL (Less than Container Load)</option>
+                                        <option value="20’GP (dry van container)">20’GP (dry van container)</option>
+                                        <option value="40’GP (dry van container)">40’GP (dry van container)</option>
+                                        <option value="40’HC (high cube container)">40’HC (high cube container)</option>
+                                        <option value="45'HC (high cube container)">45'HC (high cube container)</option>
+                                        <option value="20’RF (reefer container)">20’RF (reefer container)</option>
+                                        <option value="40’RF (standard reefer container)">40’RF (standard reefer container)</option>
+                                        <option value="40’HC RF (high cube reefer container)">40’HC RF (high cube reefer container)</option>
+                                        <option value="20’FR (flat rack container)">20’FR (flat rack container)</option>
+                                        <option value="40’FR (flat rack container)">40’FR (flat rack container)</option>
+                                        <option value="20’OT (open top container)">20’OT (open top container)</option>
+                                        <option value="40’OT (open top container)">40’OT (open top container)</option>
+                                        <option value="Breakbulk, Heavy Lift and/or Project Cargo">Breakbulk, Heavy Lift and/or Project Cargo</option>
+                                        <option value="RORO (roll-on, roll-off)">RORO (roll-on, roll-off)</option>
+                                        <option value="Other (please specify under Description)">Other (please specify under Description)</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 mb-3 col-6">
+                                <label>LBS or KGS?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio" checked>LBS
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">KGS
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 mb-3 col-6">
+                                <label>Cargo Insurance?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="insurance" checked>YES
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="insurance">NO
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cargo_value">Cargo Value in $USD</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-shield-check"></i>
+                                    <input type="number" class="form-control" id="cargo_value">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="b1">
+                                    <label class="custom-control-label" for="b1">* By using this form you agree with the storage and handling of your data by this website.</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3 text-right">
+                                <a href="#" class="btn cus-btn">SEND QUOTE REQUEST</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            </div>
+         </div>
+    </div>
+    <div class="pt-5 pb-5 footer"></div>
+    <script src="js/header-footer.js"></script>
+</body>
+</html>

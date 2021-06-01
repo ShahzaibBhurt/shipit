@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shipit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sideMenu.css">
+  <link rel="stylesheet" href="css/request-a-qoute.css">
+  <!-- MATERIAL DESIGN ICONIC FONT -->
+  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div>
+ 
+    <div class="container-fluid form-body">
+        <div class="lare page-padding">
+            <div class="wrapper">
+                <form action="" id="wizard" role="application" class="wizard clearfix">
+                    <h4 id="wizard-h-0" tabindex="-1" class="title current"></h4>
+                    <div id="wizard-p-0" role="tabpanel" aria-labelledby="wizard-h-0" class="body current" aria-hidden="false">
+                        <h3>JOB APPLICATION</h3>
+                        <h4 class="text-center mb-4">Fields marked with an asterisk (*) must be filled out before submitting.</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="full_name">Name *</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-account-o"></i>
+                                    <input type="text" class="form-control" id="full_name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="full_name">Surname *</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-account-o"></i>
+                                    <input type="text" class="form-control" id="full_name">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email">Email Address *</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-email"></i>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email">Address</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin"></i>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="number">City</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin-drop"></i>
+                                    <input type="text" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="number">Post Code</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin-drop"></i>
+                                    <input type="text" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="number">Country</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-pin-drop"></i>
+                                    <input type="text" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="number">Telephone</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-smartphone-android"></i>
+                                    <input type="number" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="number">Cell phone</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-smartphone-android"></i>
+                                    <input type="number" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label>Do you have a degree?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">YES
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">NO
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-8 mb-3">
+                                <label for="origin_port">Where did you complete your degree?</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-spellcheck"></i>
+                                    <input type="text" class="form-control" id="origin_port">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="origin_port">Title of your degree</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-edit"></i>
+                                    <input type="text" class="form-control" id="origin_port">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="description">Cover letter</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-edit"></i>
+                                    <textarea class="form-control" id="description" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="origin_port">Upload your CV</label>
+                                <div class="form-holder">
+                                    <i class="zmdi zmdi-collection-folder-image"></i>
+                                    <input type="file" class="form-control" id="origin_port">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="b1">
+                                    <label class="custom-control-label" for="b1">I have read and understood the privacy policy.</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3 text-right">
+                                <a href="#" class="btn cus-btn">APPLY</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            </div>
+         </div>
+    </div>
+    <div class="pt-5 pb-5 footer"></div>
+    <script src="js/header-footer.js"></script>
+</body>
+</html>
